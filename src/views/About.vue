@@ -29,7 +29,7 @@ onMounted(() => {})
 
 <template>
   <div class="ab">
-    <div @click="add">Addmonth</div>
+    <div @click="add" class="add-btn">Addmonth</div>
     <StackedBar
       :chart-data="stackedBarData"
       labels="month"
@@ -73,4 +73,18 @@ onMounted(() => {})
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.add-btn {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  border-radius: 25px;
+  line-height: 50px;
+  cursor: pointer;
+  color: aliceblue;
+  margin: 0 auto;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+
+</style>
